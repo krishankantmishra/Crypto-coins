@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-800 text-sm sm:text-base">
+  <header class="flex justify-between items-center font-bold text-xl sm:text-2xl font-poppins bg-slate-900 p-4">
+    <h1 class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">CryptoTracker</h1>
+     <button id="refresh-btn" class="p-2 bg-slate-700 rounded-full hover:bg-slate-600 transition">
+      🔄
+    </button>
+  </header>
+
+  <section class="flex justify-center  items-center mt-8 px-4 gap-4">
+      <input type="texyt"
+        placeholder="🔍 Search your cryptocurrency..."
+        class="w-full max-w-xl bg-slate-600 rounded-full text-gray-300 placeholder-cyan-500 px-4 py-3 focus:outline-none"
+        id="search-input">
+
+  <select
+        name="currency"
+        id="currency-select"
+        class="bg-slate-600 text-gray-300 px-4 py-3 rounded-full focus:outline-none cursor-pointer"
+      >
+        <option value="usd">USD</option>
+        <option value="inr">INR</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+        <option value="jpy">JPY</option>
+        <option value="aud">AUD</option>
+        <option value="cad">CAD</option>
+        <option value="sar">SAR</option>
+        <option value="aed">AED</option>
+       </select>
+        <button class="bg-cyan-600 rounded-full px-4 py-3 text-white hover:bg-cyan-500 hover:scale-105 transition duration-300"
+        id="search-btn">🔍</button>
+  </section>
+
+  <section class="bg-slate-900 p-8 mt-10">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="crypto-card">
+
+     </div>
+  </section>
+
+  <footer>
+    <div class="text-center p-4 text-gray-400">
+      &copy; 2025 CryptoTracker. All rights reserved. Built by <span class="text-white font-semibold">Krishan Kant Mishra</span> 
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
